@@ -5,6 +5,6 @@ app = Flask(__name__, template_folder='template')
 
 app.static_folder = 'static'
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
     return render_template('index.html')
